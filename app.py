@@ -2,7 +2,8 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 
-car_data = pd.read_csv('vehicles_us.csv')  # leer los datos
+ruta_archivo = r'C:\Users\edvac\OneDrive\Desktop\MY_APP_PROJECT\PROYECTO_TRIPLETEN\vehicles_us.csv'
+car_data = pd.read_csv(ruta_archivo)
 
 show_histogram = st.checkbox('Mostrar histograma')  # casilla de verificación para el histograma
 show_scatter = st.checkbox('Mostrar gráfico de dispersión')  # casilla de verificación para el gráfico de dispersión
