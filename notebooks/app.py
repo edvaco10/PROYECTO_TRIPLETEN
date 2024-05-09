@@ -17,6 +17,6 @@ if show_histogram:  # si la casilla de verificación de histograma está marcada
 if show_scatter:  # si la casilla de verificación de gráfico de dispersión está marcada
     st.write('Construyendo un gráfico de dispersión para el conjunto de datos de anuncios de venta de coches')
     # Crear un gráfico de dispersión
-    fig = px.scatter(car_data, x="model", y="price", color="manufacturer")  # Corregido el parámetro 'color'
+    fig = px.scatter(car_data, x="model", y="price")  # Corregido el parámetro 'color'
     # Mostrar un gráfico Plotly interactivo
     st.plotly_chart(fig, use_container_width=True)
